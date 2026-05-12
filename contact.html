@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Tektum Studio de Arhitectură</title>
+  <meta name="description" content="Contactați Tektum pentru proiecte de arhitectură, consultanță și colaborări.">
+  <script>document.documentElement.lang = localStorage.getItem('tektum-lang') || 'ro';</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav class="nav scrolled">
+    <a href="index.html" class="nav-logo"><img src="images/tektum-logo.png" alt="Tektum" class="nav-logo-img"></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">
+        <span class="ro">Acasă</span><span class="en">Home</span>
+      </a></li>
+      <li><a href="projects.html">
+        <span class="ro">Proiecte</span><span class="en">Projects</span>
+      </a></li>
+      <li><a href="about.html">
+        <span class="ro">Despre</span><span class="en">About</span>
+      </a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-toggle" role="button" aria-label="Toggle language">
+        <span data-lang="ro" class="active">RO</span>
+        <span class="sep">/</span>
+        <span data-lang="en">EN</span>
+      </div>
+      <div class="hamburger" role="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE NAV ── -->
+  <div class="mobile-nav">
+    <a href="index.html"><span class="ro">Acasă</span><span class="en">Home</span></a>
+    <a href="projects.html"><span class="ro">Proiecte</span><span class="en">Projects</span></a>
+    <a href="about.html"><span class="ro">Despre</span><span class="en">About</span></a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-nav-lang">
+      <div class="lang-toggle">
+        <span data-lang="ro">RO</span>
+        <span class="sep">/</span>
+        <span data-lang="en">EN</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CONTACT ── -->
+  <div class="contact-wrap">
+
+    <!-- Left: Info -->
+    <div class="contact-info">
+      <h1>
+        <span class="ro">Să<br>vorbim</span>
+        <span class="en">Let's<br>talk</span>
+      </h1>
+
+      <div class="contact-detail">
+        <p class="contact-detail-label">
+          <span class="ro">Adresă</span>
+          <span class="en">Address</span>
+        </p>
+        <p class="contact-detail-value">
+          Str. Virgil Fulicea nr. 23<br>
+          400022 Cluj-Napoca<br>
+          România
+        </p>
+      </div>
+
+      <div class="contact-detail">
+        <p class="contact-detail-label">
+          <span class="ro">Telefon / Fax</span>
+          <span class="en">Phone / Fax</span>
+        </p>
+        <p class="contact-detail-value">
+          <a href="tel:+40264450038">+40 264 450 038</a>
+        </p>
+      </div>
+
+      <div class="contact-detail">
+        <p class="contact-detail-label">Email</p>
+        <p class="contact-detail-value">
+          <a href="mailto:info@tektum.ro">info@tektum.ro</a>
+        </p>
+      </div>
+
+      <div class="contact-detail">
+        <p class="contact-detail-label">
+          <span class="ro">Date Fiscale</span>
+          <span class="en">Company Details</span>
+        </p>
+        <p class="contact-detail-value" style="font-size:.88rem; line-height:1.8;">
+          TEKTUM ARHITECTURĂ &amp; ARTĂ SRL<br>
+          CUI: RO18106307<br>
+          J12/3894/2005
+        </p>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form">
+      <form novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">
+              <span class="ro">Prenume</span>
+              <span class="en">First Name</span>
+            </label>
+            <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">
+              <span class="ro">Nume</span>
+              <span class="en">Last Name</span>
+            </label>
+            <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">
+            <span class="ro">Telefon</span>
+            <span class="en">Phone</span>
+          </label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+
+        <div class="form-group">
+          <label for="service">
+            <span class="ro">Tipul Proiectului</span>
+            <span class="en">Project Type</span>
+          </label>
+          <select id="service" name="service">
+            <option value="" disabled selected></option>
+            <option value="rezidential" class="ro">Proiect Rezidențial</option>
+            <option value="rezidential" class="en" style="display:none">Residential Project</option>
+            <option value="comercial" class="ro">Proiect Comercial</option>
+            <option value="comercial" class="en" style="display:none">Commercial Project</option>
+            <option value="interior" class="ro">Design Interior</option>
+            <option value="interior" class="en" style="display:none">Interior Design</option>
+            <option value="renovare" class="ro">Renovare / Reabilitare</option>
+            <option value="renovare" class="en" style="display:none">Renovation / Rehabilitation</option>
+            <option value="consultanta" class="ro">Consultanță</option>
+            <option value="consultanta" class="en" style="display:none">Consulting</option>
+            <option value="altele" class="ro">Altele</option>
+            <option value="altele" class="en" style="display:none">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">
+            <span class="ro">Mesaj</span>
+            <span class="en">Message</span>
+          </label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          <span class="ro">Trimite Mesajul</span>
+          <span class="en">Send Message</span>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/tektum-logo.png" alt="Tektum" class="footer-logo-img">
+        <p>
+          <span class="ro">Studio de arhitectură cu viziune. Proiectăm spații care inspiră și durează.</span>
+          <span class="en">An architecture studio with vision. We design spaces that inspire and endure.</span>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4><span class="ro">Navigare</span><span class="en">Navigate</span></h4>
+        <ul>
+          <li><a href="index.html"><span class="ro">Acasă</span><span class="en">Home</span></a></li>
+          <li><a href="projects.html"><span class="ro">Proiecte</span><span class="en">Projects</span></a></li>
+          <li><a href="about.html"><span class="ro">Despre</span><span class="en">About</span></a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4><span class="ro">Servicii</span><span class="en">Services</span></h4>
+        <ul>
+          <li><a href="about.html#services"><span class="ro">Arhitectură</span><span class="en">Architecture</span></a></li>
+          <li><a href="about.html#services"><span class="ro">Design Interior</span><span class="en">Interior Design</span></a></li>
+          <li><a href="about.html#services"><span class="ro">Consultanță</span><span class="en">Consulting</span></a></li>
+          <li><a href="about.html#services"><span class="ro">Urbanism</span><span class="en">Urban Planning</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@tektum.ro">info@tektum.ro</a></li>
+          <li><a href="tel:+40264450038">+40 264 450 038</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Tektum. <span class="ro">Toate drepturile rezervate.</span><span class="en">All rights reserved.</span></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proiecte | Tektum Studio de Arhitectură</title>
+  <meta name="description" content="Portofoliul Tektum — proiecte de arhitectură rezidențiale, comerciale și de interior.">
+  <script>document.documentElement.lang = localStorage.getItem('tektum-lang') || 'ro';</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav class="nav scrolled">
+    <a href="index.html" class="nav-logo"><img src="images/tektum-logo.png" alt="Tektum" class="nav-logo-img"></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">
+        <span class="ro">Acasă</span><span class="en">Home</span>
+      </a></li>
+      <li><a href="projects.html">
+        <span class="ro">Proiecte</span><span class="en">Projects</span>
+      </a></li>
+      <li><a href="about.html">
+        <span class="ro">Despre</span><span class="en">About</span>
+      </a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-toggle" role="button" aria-label="Toggle language">
+        <span data-lang="ro" class="active">RO</span>
+        <span class="sep">/</span>
+        <span data-lang="en">EN</span>
+      </div>
+      <div class="hamburger" role="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE NAV ── -->
+  <div class="mobile-nav">
+    <a href="index.html"><span class="ro">Acasă</span><span class="en">Home</span></a>
+    <a href="projects.html"><span class="ro">Proiecte</span><span class="en">Projects</span></a>
+    <a href="about.html"><span class="ro">Despre</span><span class="en">About</span></a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-nav-lang">
+      <div class="lang-toggle">
+        <span data-lang="ro">RO</span>
+        <span class="sep">/</span>
+        <span data-lang="en">EN</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PAGE HEADER ── -->
+  <header class="page-header">
+    <div class="section-label">
+      <span class="ro">Portofoliu</span>
+      <span class="en">Portfolio</span>
+    </div>
+    <h1>
+      <span class="ro">Proiecte</span>
+      <span class="en">Projects</span>
+    </h1>
+  </header>
+
+  <!-- ── FILTER ── -->
+  <div class="filter-bar">
+    <button class="filter-tab active" data-filter="all">
+      <span class="ro">Toate</span><span class="en">All</span>
+    </button>
+    <button class="filter-tab" data-filter="rezidential">
+      <span class="ro">Rezidențial</span><span class="en">Residential</span>
+    </button>
+    <button class="filter-tab" data-filter="comercial">
+      <span class="ro">Comercial</span><span class="en">Commercial</span>
+    </button>
+    <button class="filter-tab" data-filter="interior">
+      <span class="ro">Interior</span><span class="en">Interior</span>
+    </button>
+  </div>
+
+  <!-- ── PROJECTS GRID ── -->
+  <div class="projects-all">
+
+    <div class="project-item" data-category="rezidential">
+      <img src="images/project-1.jpg" alt="Vilă Privată" class="project-item-img">
+      <div class="project-item-overlay">
+        <h3><span class="ro">Vilă Privată</span><span class="en">Private Villa</span></h3>
+        <p><span class="ro">Rezidențial · Brașov</span><span class="en">Residential · Brașov</span></p>
+      </div>
+      <div class="project-item-info">
+        <p class="project-item-title"><span class="ro">Vilă Privată</span><span class="en">Private Villa</span></p>
+        <p class="project-item-sub"><span class="ro">Rezidențial · 2024</span><span class="en">Residential · 2024</span></p>
+      </div>
+    </div>
+
+    <div class="project-item" data-category="comercial">
+      <img src="images/project-2.jpg" alt="Sediu Corporativ" class="project-item-img">
+      <div class="project-item-overlay">
+        <h3><span class="ro">Sediu Corporativ</span><span class="en">Corporate Office</span></h3>
+        <p><span class="ro">Comercial · București</span><span class="en">Commercial · Bucharest</span></p>
+      </div>
+      <div class="project-item-info">
+        <p class="project-item-title"><span class="ro">Sediu Corporativ</span><span class="en">Corporate Office</span></p>
+        <p class="project-item-sub"><span class="ro">Comercial · 2023</span><span class="en">Commercial · 2023</span></p>
+      </div>
+    </div>
+
+    <div class="project-item" data-category="rezidential">
+      <img src="images/project-3.jpg" alt="Casă de Vacanță" class="project-item-img">
+      <div class="project-item-overlay">
+        <h3><span class="ro">Casă de Vacanță</span><span class="en">Holiday House</span></h3>
+        <p><span class="ro">Rezidențial · Sinaia</span><span class="en">Residential · Sinaia</span></p>
+      </div>
+      <div class="project-item-info">
+        <p class="project-item-title"><span class="ro">Casă de Vacanță</span><span class="en">Holiday House</span></p>
+        <p class="project-item-sub"><span class="ro">Rezidențial · 2023</span><span class="en">Residential · 2023</span></p>
+      </div>
+    </div>
+
+    <div class="project-item" data-category="rezidential">
+      <img src="images/project-4.jpg" alt="Ansamblu Rezidențial" class="project-item-img">
+      <div class="project-item-overlay">
+        <h3><span class="ro">Ansamblu Rezidențial</span><span class="en">Residential Complex</span></h3>
+        <p><span class="ro">Rezidențial · Cluj-Napoca</span><span class="en">Residential · Cluj-Napoca</span></p>
+      </div>
+      <div class="project-item-info">
+        <p class="project-item-title"><span class="ro">Ansamblu Rezidențial</span><span class="en">Residential Complex</span></p>
+        <p class="project-item-sub"><span class="ro">Rezidențial · 2022</span><span class="en">Residential · 2022</span></p>
+      </div>
+    </div>
+
+    <div class="project-item" data-category="interior">
+      <img src="images/project-5.jpg" alt="Design Interior Apartament" class="project-item-img">
+      <div class="project-item-overlay">
+        <h3><span class="ro">Apartament Penthouse</span><span class="en">Penthouse Apartment</span></h3>
+        <p><span class="ro">Interior · București</span><span class="en">Interior · Bucharest</span></p>
+      </div>
+      <div class="project-item-info">
+        <p class="project-item-title"><span class="ro">Apartament Penthouse</span><span class="en">Penthouse Apartment</span></p>
+        <p class="project-item-sub"><span class="ro">Interior · 2022</span><span class="en">Interior · 2022</span></p>
+      </div>
+    </div>
+
+    <div class="project-item" data-category="comercial">
+      <img src="images/project-6.jpg" alt="Renovare Istorică" class="project-item-img">
+      <div class="project-item-overlay">
+        <h3><span class="ro">Renovare Clădire Istorică</span><span class="en">Historic Building Renovation</span></h3>
+        <p><span class="ro">Comercial · Sibiu</span><span class="en">Commercial · Sibiu</span></p>
+      </div>
+      <div class="project-item-info">
+        <p class="project-item-title"><span class="ro">Renovare Clădire Istorică</span><span class="en">Historic Building Renovation</span></p>
+        <p class="project-item-sub"><span class="ro">Comercial · 2021</span><span class="en">Commercial · 2021</span></p>
+      </div>
+    </div>
+
+    <div class="project-item" data-category="rezidential">
+      <img src="images/project-7.jpg" alt="Locuință Unifamilială" class="project-item-img">
+      <div class="project-item-overlay">
+        <h3><span class="ro">Locuință Unifamilială</span><span class="en">Single Family Home</span></h3>
+        <p><span class="ro">Rezidențial · Timișoara</span><span class="en">Residential · Timișoara</span></p>
+      </div>
+      <div class="project-item-info">
+        <p class="project-item-title"><span class="ro">Locuință Unifamilială</span><span class="en">Single Family Home</span></p>
+        <p class="project-item-sub"><span class="ro">Rezidențial · 2021</span><span class="en">Residential · 2021</span></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/tektum-logo.png" alt="Tektum" class="footer-logo-img">
+        <p>
+          <span class="ro">Studio de arhitectură cu viziune. Proiectăm spații care inspiră și durează.</span>
+          <span class="en">An architecture studio with vision. We design spaces that inspire and endure.</span>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4><span class="ro">Navigare</span><span class="en">Navigate</span></h4>
+        <ul>
+          <li><a href="index.html"><span class="ro">Acasă</span><span class="en">Home</span></a></li>
+          <li><a href="projects.html"><span class="ro">Proiecte</span><span class="en">Projects</span></a></li>
+          <li><a href="about.html"><span class="ro">Despre</span><span class="en">About</span></a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4><span class="ro">Categorii</span><span class="en">Categories</span></h4>
+        <ul>
+          <li><a href="#"><span class="ro">Rezidențial</span><span class="en">Residential</span></a></li>
+          <li><a href="#"><span class="ro">Comercial</span><span class="en">Commercial</span></a></li>
+          <li><a href="#"><span class="ro">Interior</span><span class="en">Interior</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@tektum.ro">info@tektum.ro</a></li>
+          <li><a href="tel:+40264450038">+40 264 450 038</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Tektum. <span class="ro">Toate drepturile rezervate.</span><span class="en">All rights reserved.</span></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

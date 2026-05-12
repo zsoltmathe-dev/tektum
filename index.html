@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tektum | Studio de Arhitectură</title>
+  <meta name="description" content="Tektum — studio de arhitectură dedicat creării de spații cu viziune, calitate și atenție la detalii.">
+  <script>document.documentElement.lang = localStorage.getItem('tektum-lang') || 'ro';</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="hero-page">
+
+  <!-- ── NAVIGATION ── -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo"><img src="images/tektum-logo.png" alt="Tektum" class="nav-logo-img"></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">
+        <span class="ro">Acasă</span><span class="en">Home</span>
+      </a></li>
+      <li><a href="projects.html">
+        <span class="ro">Proiecte</span><span class="en">Projects</span>
+      </a></li>
+      <li><a href="about.html">
+        <span class="ro">Despre</span><span class="en">About</span>
+      </a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-toggle" role="button" aria-label="Toggle language">
+        <span data-lang="ro" class="active">RO</span>
+        <span class="sep">/</span>
+        <span data-lang="en">EN</span>
+      </div>
+      <div class="hamburger" role="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE NAV ── -->
+  <div class="mobile-nav">
+    <a href="index.html"><span class="ro">Acasă</span><span class="en">Home</span></a>
+    <a href="projects.html"><span class="ro">Proiecte</span><span class="en">Projects</span></a>
+    <a href="about.html"><span class="ro">Despre</span><span class="en">About</span></a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-nav-lang">
+      <div class="lang-toggle">
+        <span data-lang="ro">RO</span>
+        <span class="sep">/</span>
+        <span data-lang="en">EN</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <img
+      src="images/project-1.jpg"
+      alt="Proiect arhitectural Tektum"
+      class="hero-image"
+    >
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-tagline">
+        <span class="ro">Arhitectură<br>cu Viziune</span>
+        <span class="en">Architecture<br>with Vision</span>
+      </h1>
+      <p class="hero-sub">
+        <span class="ro">Studio de Arhitectură · România</span>
+        <span class="en">Architecture Studio · Romania</span>
+      </p>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span class="ro">Derulează</span>
+      <span class="en">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── FEATURED PROJECTS ── -->
+  <section class="featured-projects">
+    <div class="section-label">
+      <span class="ro">Proiecte Selectate</span>
+      <span class="en">Selected Projects</span>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 — large left -->
+      <a href="projects.html" class="project-card">
+        <img src="images/project-1.jpg" alt="Vilă Privată" class="project-thumb">
+        <div class="project-card-info">
+          <p class="project-card-num">01</p>
+          <h3 class="project-card-title">
+            <span class="ro">Vilă Privată</span>
+            <span class="en">Private Villa</span>
+          </h3>
+          <p class="project-card-meta">
+            <span class="ro">Rezidențial · Brașov · 2024</span>
+            <span class="en">Residential · Brașov · 2024</span>
+          </p>
+        </div>
+      </a>
+
+      <!-- Project 2 — top right -->
+      <a href="projects.html" class="project-card">
+        <img src="images/project-2.jpg" alt="Sediu Corporativ" class="project-thumb">
+        <div class="project-card-info">
+          <p class="project-card-num">02</p>
+          <h3 class="project-card-title">
+            <span class="ro">Sediu Corporativ</span>
+            <span class="en">Corporate Office</span>
+          </h3>
+          <p class="project-card-meta">
+            <span class="ro">Comercial · București · 2023</span>
+            <span class="en">Commercial · Bucharest · 2023</span>
+          </p>
+        </div>
+      </a>
+
+      <!-- Project 3 — bottom right -->
+      <a href="projects.html" class="project-card">
+        <img src="images/project-3.jpg" alt="Casă de Vacanță" class="project-thumb">
+        <div class="project-card-info">
+          <p class="project-card-num">03</p>
+          <h3 class="project-card-title">
+            <span class="ro">Casă de Vacanță</span>
+            <span class="en">Holiday House</span>
+          </h3>
+          <p class="project-card-meta">
+            <span class="ro">Rezidențial · Sinaia · 2023</span>
+            <span class="en">Residential · Sinaia · 2023</span>
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <a href="projects.html" class="btn">
+      <span class="ro">Vezi toate proiectele</span>
+      <span class="en">View all projects</span>
+    </a>
+  </section>
+
+  <!-- ── ABOUT TEASER ── -->
+  <section class="about-teaser">
+    <img
+      src="images/studio.jpg"
+      alt="Studio Tektum"
+      class="about-teaser-img"
+    >
+    <div class="about-teaser-content">
+      <div class="section-label">
+        <span class="ro">Despre Studio</span>
+        <span class="en">About the Studio</span>
+      </div>
+      <h2 class="section-title">
+        <span class="ro">Creăm spații<br>care durează</span>
+        <span class="en">We create spaces<br>that endure</span>
+      </h2>
+      <p class="about-teaser-text">
+        <span class="ro">
+          Suntem un studio de arhitectură dedicat creării de spații care inspiră
+          și rezistă timpului. Cu o viziune curajoasă și atenție meticuloasă la
+          detalii, transformăm fiecare proiect într-o lucrare de artă funcțională,
+          adaptată nevoilor și visurilor clientului.
+        </span>
+        <span class="en">
+          We are an architecture studio dedicated to creating spaces that inspire
+          and stand the test of time. With bold vision and meticulous attention
+          to detail, we transform every project into a work of functional art,
+          tailored to the needs and dreams of our clients.
+        </span>
+      </p>
+      <a href="about.html" class="btn">
+        <span class="ro">Descoperă studioul</span>
+        <span class="en">Discover the studio</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/tektum-logo.png" alt="Tektum" class="footer-logo-img">
+        <p>
+          <span class="ro">Studio de arhitectură cu viziune. Proiectăm spații care inspiră și durează.</span>
+          <span class="en">An architecture studio with vision. We design spaces that inspire and endure.</span>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4><span class="ro">Navigare</span><span class="en">Navigate</span></h4>
+        <ul>
+          <li><a href="index.html"><span class="ro">Acasă</span><span class="en">Home</span></a></li>
+          <li><a href="projects.html"><span class="ro">Proiecte</span><span class="en">Projects</span></a></li>
+          <li><a href="about.html"><span class="ro">Despre</span><span class="en">About</span></a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4><span class="ro">Servicii</span><span class="en">Services</span></h4>
+        <ul>
+          <li><a href="about.html#services"><span class="ro">Arhitectură</span><span class="en">Architecture</span></a></li>
+          <li><a href="about.html#services"><span class="ro">Design Interior</span><span class="en">Interior Design</span></a></li>
+          <li><a href="about.html#services"><span class="ro">Consultanță</span><span class="en">Consulting</span></a></li>
+          <li><a href="about.html#services"><span class="ro">Urbanism</span><span class="en">Urban Planning</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@tektum.ro">info@tektum.ro</a></li>
+          <li><a href="tel:+40264450038">+40 264 450 038</a></li>
+          <li><a href="contact.html">Cluj-Napoca</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Tektum. <span class="ro">Toate drepturile rezervate.</span><span class="en">All rights reserved.</span></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
